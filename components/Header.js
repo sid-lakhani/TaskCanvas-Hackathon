@@ -31,7 +31,7 @@ export default function Header() {
                 }} className='select-none duration-300 px-4 sm:px-8 py-2 duration-300 hover:pl-12 cursor-pointer'>Logout</h2>
             </div> */}
             <div className='fixed top-0 w-full left-0 bg-inherit flex items-center justify-between px-5 sm:px-10 border-b border-solid border-white'>
-                <h1 className='text-6xl font-extrabold select-none py-2'>Task<span className='bg-gradient-to-tr from-red-600 to-red-500 text-transparent bg-clip-text'>Canvas</span></h1>
+                <h1 className='text-5xl sm:text-6xl font-extrabold select-none py-2'>Task<span className='bg-gradient-to-tr from-red-600 to-red-500 text-transparent bg-clip-text'>Canvas</span></h1>
                 {/* {currentUser && <i onClick={() => setOpenModal(true)} className="fa-solid fa-user text-4xl duration-300 hover:opacity-40 cursor-pointer"></i>} */}
                 <div>
                     {currentUser && <i
@@ -44,7 +44,7 @@ export default function Header() {
                     </i>}
                     {/* {isDropdownOpen && logoutDropDown()} */}
                 </div>
-                {!currentUser && <i className="fa-solid fa-check text-4xl bg-gradient-to-tr from-red-600 to-red-500 text-transparent bg-clip-text"></i>}
+                {!currentUser && <i className="fa-solid fa-check text-3xl sm:text-4xl bg-gradient-to-tr from-red-600 to-red-500 text-transparent bg-clip-text"></i>}
             </div>
         </>
     )
