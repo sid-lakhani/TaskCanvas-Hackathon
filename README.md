@@ -1,2 +1,3 @@
 # TaskCanvas-Hackathon
- ToDo List
+
+ ToDo List made using NextJS for a Hackathon!
