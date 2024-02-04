@@ -15,7 +15,7 @@ export default function TodoCard(props) {
     } = props
 
     return (
-        <div className='p-2 relative sm:p-3 border flex items-stretch border-white border-solid'>
+        <div className='p-2 relative sm:p-3 border flex items-stretch bg-red-500 border-white border-solid'>
             <div className='flex-1 flex capitalize'>
                 {!(edit === todoKey) ? <>{children}</>: (
                     <input className='bg-inherit flex-1 text-white outline-none capitalize' value={edittedValue} onChange={(e) => setEdittedValue(e.target.value)}/>

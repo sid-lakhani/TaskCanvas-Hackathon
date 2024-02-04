@@ -154,7 +154,7 @@ export default function UserDashboard() {
       )}
       {!loading && Object.keys(todos).length > 0 && (
         <>
-          <h2 className="text-lg font-semibold">Todos:</h2>
+          <h2 className="text-lg font-semibold text-rose-600">Todos:</h2>
           {Object.keys(todos)
             .sort((a, b) => b - a)
             .map((todoKey, i) => {
@@ -180,7 +180,7 @@ export default function UserDashboard() {
 
       {!loading && Object.keys(completedTodos).length > 0 && (
         <>
-          <h2 className="text-lg font-semibold mt-4">Completed Todos:</h2>
+          <h2 className="text-lg font-semibold mt-4 text-rose-600">Completed Todos:</h2>
           {Object.keys(completedTodos)
             .sort((a, b) => b - a)
             .map((completedTodoKey, i) => {

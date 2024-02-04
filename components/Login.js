@@ -59,7 +59,7 @@ export default function Login() {
     return (
         <div className='fixed inset-0 flex items-center justify-center bg-inherit overflow-hidden'>
             <div className='flex-1 flex flex-col text-xm sm:text-sm justify-center items-center gap-1 p-4'>
-                <h1 className='font-extrabold select-none text-3xl pb-1 uppercase underline'>
+                <h1 className='font-extrabold select-none text-3xl pb-1 uppercase underline text-red-500'>
                     {isLoggingIn ? 'Login' : 'Register'}
                 </h1>
                 {error && <div className='w-full max-w-[40ch] border-rose-300 border text-center select-none border-solid text-rose-400 py-2'>{error}</div>}
@@ -92,7 +92,7 @@ export default function Login() {
                         } text-slate-900 select-none p-2 w-full max-w-[40ch]`}
                 />
                 }
-                <button onClick={submitHandler} className='w-full max-w-[40ch] border border-white border-solid uppercase py-2 duration-300 relative after:absolute after:top-0 after:right-full after:bg-red-700 after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:font-bold'>
+                <button onClick={submitHandler} className='w-full max-w-[40ch] border border-white bg-red-500 border-solid uppercase py-2 duration-300 relative after:absolute after:top-0 after:right-full after:bg-red-700 after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:font-bold'>
                     <h2 className='relative z-20 select-none'>SUBMIT</h2>
                 </button>
                 <h3 className='select-none text-sm pt-1 underline capitalize'>{isLoggingIn ? 'Dont have an account?' : 'Have an account already?'}</h3>
@@ -102,7 +102,7 @@ export default function Login() {
                         onClick={demoPass}
                         // onMouseEnter={() => setIsDropdownOpen(true)}
                         // onMouseLeave={() => setIsDropdownOpen(false)}
-                        className='w-full max-w-[15ch] bg-white text-slate-900 uppercase p-2 duration-200 hover:opacity-60 hover:font-bold'>
+                        className='w-full max-w-[15ch] bg-white text-red-900 uppercase p-2 duration-200 hover:opacity-80 hover:font-bold'>
                         <h2 className='relative z-20 select-none'>
                             Demo Account
                         </h2>
